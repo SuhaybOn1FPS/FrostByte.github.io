@@ -8,7 +8,7 @@ body {
   font-size: 80px;
   text-align: center;
   margin-top: 40px;
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); /* smooth ease-in-out */
+  transition: all 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .title.shrink {
@@ -23,5 +23,5 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
   z-index: 1000;
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
