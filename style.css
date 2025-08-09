@@ -5,35 +5,14 @@ body {
 }
 
 .title {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%) scale(1);
+  margin-top: 40px
   font-size: 80px;
   color: white;
   background: black;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transform-origin: left center; /* where scaling & transform pivot */
-  transition: transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1), font-size 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-  z-index: 1000;
-  text-align: center;
-  margin: 0;
+
 }
 
-.title.shrink {
-  transform: translateX(0) scale(0.375); /* move to left (0%), shrink to ~30px from 80px */
-  font-size: 30px;
-  text-align: left;
-  padding: 5px;
-}
-JS stays the same:
-js
-Copy
-Edit
-const header = document.getElementById('header');
 
-window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     header.classList.add('shrink');
   } else {
