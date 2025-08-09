@@ -3,14 +3,13 @@ body {
   color: white;
   font-family: Verdana, Geneva, sans-serif;
 }
-
 .title {
-  text-align: center;
-  font-size: 80px;
-  margin-top: 40px
   position: relative;
-  transition: all 0.3s ease;
-  }
+  font-size: 80px;
+  text-align: center;
+  margin-top: 40px;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); /* smooth ease-in-out */
+}
 
 .title.shrink {
   position: fixed;
@@ -24,4 +23,5 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
   z-index: 1000;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
