@@ -19,3 +19,10 @@ body {
     header.classList.remove('shrink');
   }
 });
+
+.links {
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  blank: 10px; 
+}
